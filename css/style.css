@@ -1,0 +1,115 @@
+.container {
+    max-width: 1264px;
+    padding: 0 10px;
+    margin: 0 auto;
+    outline: 1px solid red;
+}
+
+.header {
+    padding-top: 20px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    background: #FEFCF7;
+    padding: 20px;
+    border-radius: 60px;
+}
+
+.header-logo {
+    color: #161616;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.header-leaf {
+    width: 20.1px;
+height: 23.1px;
+fill: orange;
+}
+
+.header-btn {
+    background-color: transparent;
+    border: none;
+    margin-left: auto;
+}
+
+.header-menu {
+    width: 18.0px;
+height: 12.0px;
+}
+
+.header-list {
+    display: none;
+}
+
+.header-items {
+    display: none;
+}
+
+@media (min-width: 382px ) {
+   .container {
+    width: 382px;
+   }
+}
+
+@media (min-width: 1264px ) {
+   .container {
+    width: 1264px;
+    padding: 0 12px;
+   }
+
+   .header {
+    padding-top: 40px;
+   }
+
+   .header-container {
+    padding: 24px 40px;
+   }
+
+   .header-btn {
+    display: none;
+   }
+
+   .header-list {
+    display: flex;
+    gap: 32px;
+    margin-right: auto;
+   }
+
+   .header-link {
+    color: #161616;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+   }
+
+   .header-items {
+    display: flex;
+    margin-left: auto;
+    gap: 32px;
+   }
+
+   .header-contakt {
+    color: #161616;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+   }
+
+   .header-elem:last-child {
+    .header-contakt {
+        padding: 8px 14px;
+border-radius: 100px;
+border: 1px solid #161616;
+    }
+   }
+}
