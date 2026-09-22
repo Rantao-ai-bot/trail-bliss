@@ -1,115 +1,217 @@
 .container {
-    max-width: 1264px;
-    padding: 0 10px;
-    margin: 0 auto;
-    outline: 1px solid red;
+  max-width: 1264px;
+  padding: 0 10px;
+  margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .header {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
-    background: #FEFCF7;
-    padding: 20px;
-    border-radius: 60px;
+  display: flex;
+  align-items: center;
+  background: #fefcf7;
+  padding: 20px;
+  border-radius: 60px;
 }
 
 .header-logo {
-    color: #161616;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-display: flex;
-align-items: center;
-gap: 12px;
+  color: #161616;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .header-leaf {
-    width: 20.1px;
-height: 23.1px;
-fill: orange;
+  width: 20.1px;
+  height: 23.1px;
+  fill: orange;
 }
 
 .header-btn {
-    background-color: transparent;
-    border: none;
-    margin-left: auto;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
 }
 
 .header-menu {
-    width: 18.0px;
-height: 12.0px;
+  width: 18px;
+  height: 12px;
 }
 
 .header-list {
-    display: none;
+  display: none;
 }
 
 .header-items {
-    display: none;
+  display: none;
 }
 
-@media (min-width: 382px ) {
-   .container {
+@media (min-width: 382px) {
+  .container {
     width: 382px;
-   }
+  }
 }
 
-@media (min-width: 1264px ) {
-   .container {
+.hero-title {
+  align-self: stretch;
+  color: var(--Black, #161616);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+}
+
+.hero-text {
+  align-self: stretch;
+  color: var(--Gray-Dark, #454444);
+  text-align: center;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 20px;
+}
+
+.hero-btn {
+  display: flex;
+  padding: 14px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  background: var(--Trial-Black, #161616);
+  color: var(--White, #fff);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 20px auto;
+}
+
+.hero-arow {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+
+.hero-img {
+  margin-bottom: 20px;
+width: 362.0px;
+height: 280.0px;
+}
+
+@media (min-width: 1264px) {
+  .container {
     width: 1264px;
     padding: 0 12px;
-   }
+  }
 
-   .header {
+  .header {
     padding-top: 40px;
-   }
+  }
 
-   .header-container {
+  .header-container {
     padding: 24px 40px;
-   }
+  }
 
-   .header-btn {
+  .header-btn {
     display: none;
-   }
+  }
 
-   .header-list {
+  .header-list {
     display: flex;
     gap: 32px;
     margin-right: auto;
-   }
+  }
 
-   .header-link {
+  .header-link {
     color: #161616;
-font-size: 20px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-   }
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
-   .header-items {
+  .header-items {
     display: flex;
     margin-left: auto;
     gap: 32px;
-   }
+  }
 
-   .header-contakt {
+  .header-contakt {
     color: #161616;
-font-size: 18px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-   }
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
 
-   .header-elem:last-child {
+  .header-elem:last-child {
     .header-contakt {
-        padding: 8px 14px;
-border-radius: 100px;
-border: 1px solid #161616;
+      padding: 8px 14px;
+      border-radius: 100px;
+      border: 1px solid #161616;
     }
-   }
+  }
+
+  .hero-title {
+    flex: 1 0 0;
+    color: var(--Trial-Black, #161616);
+    font-family: Manrope;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    width: 819px;
+    height: 237px;
+  }
+
+  .hero-text {
+    align-self: stretch;
+    color: var(--Gray-Dark, #454444);
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    width: 397px;
+    height: 132px;
+  }
+
+  .hero-btn {
+    display: flex;
+    padding: 18px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: var(--Trial-Black, #161616);
+    color: var(--Terratrip-White, #fff);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .hero-arow {
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+  }
+
+  .hero-img {
+    width: 1240.0px;
+height: 500.0px;
+
+  }
 }
