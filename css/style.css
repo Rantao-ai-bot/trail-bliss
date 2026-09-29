@@ -106,8 +106,8 @@
 
 .hero-img {
   margin-bottom: 20px;
-width: 362.0px;
-height: 280.0px;
+  width: 362px;
+  height: 280px;
 }
 
 @media (min-width: 1264px) {
@@ -210,8 +210,7 @@ height: 280.0px;
   }
 
   .hero-img {
-    width: 1240.0px;
-height: 500.0px;
-
+    width: 1240px;
+    height: 500px;
   }
 }
