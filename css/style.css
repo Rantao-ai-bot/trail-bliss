@@ -248,6 +248,60 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
+  /* COMPINIONS */
+  .compinions {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .compinions-img {
+    width: 362px;
+    height: 280px;
+    border-radius: 15px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+  }
+
+  .compinions-title {
+    align-self: stretch;
+    color: var(--Black, #161616);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+
+  .compinions-text {
+    align-self: stretch;
+    color: var(--Gray-Dark, #454444);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 12px;
+  }
+
+  .compinions-btn {
+    width: 178px;
+    height: 50px;
+    padding: 14px 18px;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--Black, #161616);
+    background: var(--White, #fff);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+  }
 }
 
 /* DESKTOP */
@@ -444,7 +498,6 @@
     width: 292px;
     height: 360px;
     padding: 20px;
-    
   }
 
   .adventure-info {
@@ -463,4 +516,6 @@
   .adventure-picture {
     margin: 0;
   }
+
+  /* C */
 }
