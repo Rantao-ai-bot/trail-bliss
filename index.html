@@ -1,76 +1,133 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header class="header">
       <div class="container header-container">
         <ul class="header-list">
-            <li class="header-item"><a href="#" class="header-link">Home</a></li>
-            <li class="header-item"><a href="#" class="header-link">Pricing</a></li>
-            <li class="header-item"><a href="#" class="header-link">Blog</a></li>
+          <li class="header-item"><a href="#" class="header-link">Home</a></li>
+          <li class="header-item">
+            <a href="#" class="header-link">Pricing</a>
+          </li>
+          <li class="header-item"><a href="#" class="header-link">Blog</a></li>
         </ul>
-        <a class="header-logo" href="./index.html"><svg class="header-leaf">
+        <a class="header-logo" href="./index.html"
+          ><svg class="header-leaf">
             <use href="./imgs/symbol-defs.svg#logo"></use>
-        </svg>Trail Bliss</a>
+          </svg>
+          >Trail Bliss</a
+        >
+
         <button class="header-btn">
-            <svg class="header-menu">
-                <use href="./imgs/symbol-defs.svg#menu"></use>
-            </svg>
+          <svg class="header-menu">
+            <use href="./imgs/symbol-defs.svg#menu"></use>
+          </svg>
         </button>
         <ul class="header-items">
-            <li class="header-elem"><a href="#" class="header-contakt">Testimonial</a></li>
-            <li class="header-elem"><a href="#" class="header-contakt">FAQ</a></li>
-            <li class="header-elem"><a href="#" class="header-contakt">Contact Us</a></li>
+          <li class="header-elem">
+            <a href="#" class="header-contakt">Testimonial</a>
+          </li>
+          <li class="header-elem">
+            <a href="#" class="header-contakt">FAQ</a>
+          </li>
+          <li class="header-elem">
+            <a href="#" class="header-contakt">Contact Us</a>
+          </li>
         </ul>
       </div>
     </header>
     <main>
-        <section class="hero">
-  <div class="container">
-    <div class="hero-wrap">
-      <h1 class="hero-title">
-        Discover Your Next Great Adventure with Trail Bliss
-      </h1>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wrap">
+            <h1 class="hero-title">
+              Discover Your Next Great Adventure with Trail Bliss
+            </h1>
+            <div class="hero-wrapper">
+              <p class="hero-text">
+                Uncover hidden gems, plan seamless trips, and make memories that
+                last a lifetime. Your journey to bliss begins here.
+              </p>
+              <button class="hero-btn" type="button">
+                Start Exploring
+                <svg class="hero-arow">
+                  <use href="./imgs/symbol-defs.svg#arow-3"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
 
-      <div class="hero-content">
-        <p class="hero-text">
-          Uncover hidden gems, plan seamless trips, and make memories that last a lifetime. Your journey to bliss begins here.
+          <picture>
+            <source
+              srcset="
+                ./imgs/desktop/hero-destop@1x.jpg 1x,
+                ./imgs/desktop/hero-destop@2x.jpg 2x
+              "
+              media="(min-width: 1264px)"
+            />
+            <source
+              srcset="
+                ./imgs/mobile/hero-mobile@1x.jpg 1x,
+                ./imgs/mobile/hero-mobile@2x.jpg 2x
+              "
+              media="(min-width: 382px)"
+            />
+            <img
+              class="hero-img"
+              src="./imgs/hero-img.webp"
+              alt="Venice canal"
+            />
+          </picture>
+        </div>
+      </section>
+      <section class="adventure">
+        <div class="container">
+        <h1 class="adventure-title">Travel Tales That Inspire Adventure</h1>
+        <p class="adventure-text">
+          Prepare for the journey of a lifetime! Explore our unforgettable
+          experiences.
         </p>
-
-        <button class="hero-btn" type="button">
-          Start Exploring
-          <svg class="hero-arow">
-            <use href="./imgs/symbol-defs.svg#arow-3"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <picture>
-      <source
-        srcset="./desktop/hero-destop@1x.jpg 1x, ./desktop/hero-destop@2x.jpg 2x"
-        media="(min-width: 1264px)"
-      >
-      <source
-        srcset="./mobile/hero-mobile@1x.jpg 1x, ./mobile/hero-mobile@2x.jpg 2x"
-        media="(min-width: 382px)"
-      >
-      <img class="hero-img" src="./imgs/hero-img.webp" alt="Venice canal">
-    </picture>
-  </div>
-</section>
+        <picture>
+          <source srcset="./imgs/desktop/desktop-desert@1x.jpg 1x, ./imgs/desktop/desktop-desert@2x.jpg 2x" media="(min-width:1264px)">
+          <source srcset="./imgs/mobile/mobile-desert@1x.jpg 1x, ./imgs/mobile/mobile-desert@2x.jpg 2x" media="(min-width:382px)">
+        <img class="adventure-img" src="./imgs/adventure-desert.png" alt="desert" />
+        </picture>
+        <div class="adventure-wrap">
+          <h1 class="adventure-detitle">Let's Explore in a <br> Group Tour</h1>
+          <p class="adventure-info">
+            At Trail Bliss, the world is our playground. and every journey is an
+            opportunity to discover something new. Join us as we explore
+            thunders of the world and create memories that will last a lifetime.
+          </p>
+        </div>
+         <picture>
+          <source srcset="./imgs/desktop/house-desktop@1x.jpg 1x, ./imgs/desktop/house-desktop@2x.jpg 2x," media="(min-width:1264px)">
+          <source srcset="./imgs/mobile/house-mobile@1x.jpg 1x, ./imgs/mobile/house-mobile@2x.jpg 2x" media="(min-width:382px)">
+        <img class="adventure-picture" src="./imgs/house.png" alt="house">
+         </picture>
+          <img class="adventure-video" src="./imgs/video.png" alt="video">
+        </div>
+      </section>
     </main>
     <footer></footer>
-    
-</body>
+  </body>
 </html>
