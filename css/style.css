@@ -432,8 +432,193 @@
     font-weight: 700;
     line-height: 110%;
   }
-}
 
+  .events-items:nth-child(2) {
+    display: none;
+  }
+
+  /* PLANING */
+  .planing {
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    background: var(--White, #fff);
+  }
+
+  .planing-title {
+    align-self: stretch;
+    color: var(--Black, #161616);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    margin-top: 20px;
+  }
+
+  .planing-text {
+    align-self: stretch;
+    color: var(--Gray-Dark, #454444);
+    text-align: center;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 12px;
+  }
+
+  .planing-btn {
+    color: var(--Black, #161616);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    padding: 14px 18px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--Black, #161616);
+    background: var(--White, #fff);
+    width: 178px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+
+  /* TRAVEL */
+  .travel {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: var(--Cream-Lite, #fefcf7);
+  }
+
+  .travel .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .travel-title {
+    width: 100%;
+    margin: 0 0 24px;
+    color: var(--Black, #161616);
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 120%;
+  }
+
+  .travel-text {
+    width: 100%;
+    margin: 0 0 20px;
+    color: var(--Gray-Dark, #454444);
+    text-align: center;
+    font-family: Manrope, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .travel-arows {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .travel-arowl,
+  .travel-arowr {
+    display: block;
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+    box-sizing: border-box;
+    fill: #161616;
+    border: 1px solid #454444;
+    border-radius: 50%;
+  }
+
+  .travel-arowl {
+    transform: scaleX(-1);
+  }
+
+  .travel-wrap {
+    width: 100%;
+    padding: 20px 24px;
+    background: #fff;
+    border-radius: 12px;
+  }
+
+  .travel-img {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+  }
+
+  .travel-info {
+    width: 100%;
+    height: auto;
+    margin: 0 0 16px;
+    color: #161616;
+    font-family: Manrope, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: left;
+  }
+
+  .travel-wrapper {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 8px;
+    align-items: center;
+  }
+
+  .travel-account {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .travel-detitle {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 0;
+    color: #161616;
+    font-family: Manrope, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  .travel-adres {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 0;
+    color: #777;
+    font-family: Manrope, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+}
 /* DESKTOP */
 
 @media (min-width: 1264px) {
@@ -832,5 +1017,157 @@
     text-align: left;
     width: 495px;
     height: 44px;
+  }
+
+  .events-wrap {
+    flex-direction: row;
+  }
+
+  .events-items:nth-child(2) {
+    display: block;
+  }
+
+  /* PLANING */
+  .planing {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: var(--White, #fff);
+  }
+
+  .planing .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .planing-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    flex: 1;
+  }
+
+  .planing picture {
+    flex-shrink: 0;
+  }
+
+  .planing-img {
+    width: 503px;
+    height: 500px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .planing-title {
+    align-self: stretch;
+    color: var(--Trial-Black, #161616);
+    font-family: Manrope;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: left;
+    width: 608px;
+    height: 174px;
+    margin-bottom: 28px;
+  }
+
+  .planing-text {
+    align-self: stretch;
+    color: var(--Gray-Dark, #454444);
+    font-family: Manrope;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+    width: 608px;
+    height: 54px;
+    margin-top: 0;
+  }
+
+  .planing-btn {
+    color: var(--Black, #161616);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    padding: 18px 22px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 1px solid var(--Black, #161616);
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  /* TRAVEL */
+  .travel .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .travel-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 397px;
+    height: 311px;
+    margin-right: auto;
+  }
+
+  .travel-title {
+    align-self: stretch;
+color: var(--Black, #161616);
+font-family: Manrope;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 120%;
+text-align: left;
+  }
+
+  .travel-text {
+    align-self: stretch;
+color: var(--Gray-Dark, #454444);
+font-family: Manrope;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: left;
+margin-bottom: 0;
+  }
+
+  .travel-arows {
+    margin-top: 50px;
+  }
+
+  .travel-img {
+    color: #ED952B;
+  }
+
+  .travel-info {
+    color: #000;
+font-family: Manrope;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+width: 291.0px;
+height: 176.0px;
+  }
+
+  .travel-wrap {
+    width: 351.0px;
+height: 313.0px;
+padding: 20px 30px;
   }
 }
